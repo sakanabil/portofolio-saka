@@ -830,11 +830,53 @@ const Portfolio = () => {
               </div>
             </div>
 
+            {/* Smart Toll */}
+            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
+              {/* --- BAGIAN GAMBAR HEADER --- */}
+              <div
+                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('/toll.jpg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+              >
+                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
+                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
+
+                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
+
+                {/* Tag & Judul */}
+                <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
+                  Proyek Personal
+                </span>
+                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
+                  Smart Toll
+                </h3>
+              </div>
+              {/* --- AKHIR BAGIAN GAMBAR HEADER --- */}
+
+              <div className="p-7 grow flex flex-col justify-between bg-white/50">
+                <div>
+                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
+                    Desain UI/UX mobile adaptasi dari aplikasi web Smart Toll
+                    (Proyek Kuliah) untuk monitoring dan manajemen sistem tol
+                    secara real-time.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    UI/UX
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Figma
+                  </span>
+                </div>
+              </div>
+            </div>
+
             {/* Lomba Data Science */}
             <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
               <div
                 className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('/ongoing.png')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+                style={{ backgroundImage: "url('/DAC.png')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
               >
                 {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
                 <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
@@ -871,7 +913,7 @@ const Portfolio = () => {
             <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
               <div
                 className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('/ongoing.png')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+                style={{ backgroundImage: "url('/gammafest.png')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
               >
                 {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
                 <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
