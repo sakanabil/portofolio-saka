@@ -216,9 +216,9 @@ const Portfolio = () => {
             Saka Nabil
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            UI/UX Designer <span className="text-slate-300 mx-2">|</span>{" "}
             Front-End Developer <span className="text-slate-300 mx-2">|</span>{" "}
-            Data Science Enthusiast
+            UI/UX Designer <span className="text-slate-300 mx-2">|</span> Data
+            Science Enthusiast
           </p>
 
           <div className="flex flex-wrap justify-center gap-5 mb-14">
@@ -299,9 +299,9 @@ const Portfolio = () => {
               Saya adalah Mahasiswa semester 6 program D-IV Teknik Informatika
               di Politeknik Negeri Malang. Saya memiliki ketertarikan mendalam
               dan fokus pada{" "}
-              <strong className="text-slate-900">UI/UX Design</strong>,{" "}
-              <strong className="text-slate-900">Front-End Development</strong>,
-              serta <strong className="text-slate-900">Data Science</strong>.
+              <strong className="text-slate-900">Front-End Development</strong>,{" "}
+              <strong className="text-slate-900">UI/UX Design</strong>, serta{" "}
+              <strong className="text-slate-900">Data Science</strong>.
             </p>
             <p className="text-slate-600 leading-relaxed text-lg mb-8">
               Kreatif, berorientasi pada detail, dan selalu mengutamakan
@@ -335,10 +335,10 @@ const Portfolio = () => {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "UI/UX Design",
                     "Front-End Development",
                     "Web App Development",
                     "Data Science",
+                    "UI/UX Design",
                   ].map((skill) => (
                     <span
                       key={skill}
@@ -376,7 +376,8 @@ const Portfolio = () => {
                       Front-End & Mobile
                     </div>
                     <p className="text-sm text-slate-600 font-medium">
-                      HTML, CSS, JS, Dart, Flutter
+                      HTML, CSS, JavaScript, Bootstrap, React, Next.js, Tailwind
+                      CSS
                     </p>
                   </div>
                   <div className="bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-white shadow-[0_4px_20px_rgba(14,165,233,0.03)] hover:bg-white transition-colors duration-300 group">
@@ -397,10 +398,10 @@ const Portfolio = () => {
                         size={18}
                         className="text-sky-500 group-hover:text-blue-600 transition-colors"
                       />{" "}
-                      Multimedia
+                      Mobile
                     </div>
                     <p className="text-sm text-slate-600 font-medium">
-                      Vegas Pro
+                      Dart, Flutter
                     </p>
                   </div>
                 </div>
@@ -440,7 +441,7 @@ const Portfolio = () => {
                   </p>
                   <p className="text-slate-500 text-sm mt-3 leading-relaxed font-medium">
                     Saat ini menempuh pendidikan di semester 6 dengan minat
-                    utama pada pengembangan antarmuka, aplikasi mobile, dan data
+                    utama pada front-end development, ui/ux design, dan data
                     science.
                   </p>
                 </div>
@@ -571,42 +572,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Kuliah Room Booking */}
-            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
-              <div
-                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('/Peminjaman.jpg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
-              >
-                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
-                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
-
-                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
-                <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
-                  Proyek Kuliah
-                </span>
-                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
-                  Room Booking
-                </h3>
-              </div>
-              <div className="p-7 grow flex flex-col justify-between bg-white/50">
-                <div>
-                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
-                    Desain UI/UX Sistem Peminjaman Ruangan universitas untuk
-                    mempermudah manajemen dan pemesanan ruangan.
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    UI/UX
-                  </span>
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    Figma
-                  </span>
-                </div>
-              </div>
-            </div>
-
             {/* Kuliah SIGMA */}
             <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
               <div
@@ -649,6 +614,9 @@ const Portfolio = () => {
                   </span>
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
                     Laravel
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Bootstrap
                   </span>
                 </div>
               </div>
@@ -696,6 +664,45 @@ const Portfolio = () => {
                   </span>
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
                     Laravel
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    CSS
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Kuliah Room Booking */}
+            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
+              <div
+                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('/Peminjaman.jpg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+              >
+                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
+                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
+
+                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
+                <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
+                  Proyek Kuliah
+                </span>
+                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
+                  Room Booking
+                </h3>
+              </div>
+              <div className="p-7 grow flex flex-col justify-between bg-white/50">
+                <div>
+                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
+                    Desain UI/UX Sistem Peminjaman Ruangan universitas untuk
+                    mempermudah manajemen dan pemesanan ruangan.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    UI/UX
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Figma
                   </span>
                 </div>
               </div>
@@ -752,42 +759,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Kuliah Lomba poster */}
-            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
-              <div
-                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('/poster.jpeg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
-              >
-                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
-                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
-
-                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
-                <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
-                  Proyek Lomba
-                </span>
-                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
-                  Poster Infografis
-                </h3>
-              </div>
-              <div className="p-7 grow flex flex-col justify-between bg-white/50">
-                <div>
-                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
-                    Poster Infografis dengan Tema “Revitalisasi Pertanian:
-                    Menuju Hasil Lebih Baik dengan Teknologi Terbaru”
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    Figma
-                  </span>
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    CorelDraw
-                  </span>
-                </div>
-              </div>
-            </div>
-
             {/* Lomba UI/UX */}
             <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
               {/* --- BAGIAN GAMBAR HEADER --- */}
@@ -830,43 +801,37 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Smart Toll */}
+            {/* Kuliah Lomba poster */}
             <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
-              {/* --- BAGIAN GAMBAR HEADER --- */}
               <div
                 className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('/toll.jpg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+                style={{ backgroundImage: "url('/poster.jpeg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
               >
                 {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
                 <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
 
                 {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
-
-                {/* Tag & Judul */}
-                <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
-                  Proyek Personal
+                <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
+                  Proyek Lomba
                 </span>
                 <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
-                  Smart Toll
+                  Poster Infografis
                 </h3>
               </div>
-              {/* --- AKHIR BAGIAN GAMBAR HEADER --- */}
-
               <div className="p-7 grow flex flex-col justify-between bg-white/50">
                 <div>
                   <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
-                    Desain UI/UX mobile adaptasi dari aplikasi web Smart Toll
-                    (Proyek Kuliah) untuk monitoring dan manajemen sistem tol
-                    secara real-time.
+                    Poster Infografis dengan Tema “Revitalisasi Pertanian:
+                    Menuju Hasil Lebih Baik dengan Teknologi Terbaru”
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    UI/UX
+                    Figma
                   </span>
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    Figma
+                    CorelDraw
                   </span>
                 </div>
               </div>
@@ -941,6 +906,95 @@ const Portfolio = () => {
                   </span>
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
                     Python
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Smart Toll */}
+            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
+              {/* --- BAGIAN GAMBAR HEADER --- */}
+              <div
+                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('/toll.jpg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+              >
+                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
+                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
+
+                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
+
+                {/* Tag & Judul */}
+                <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
+                  Proyek Personal
+                </span>
+                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
+                  Smart Toll Mobile
+                </h3>
+              </div>
+              {/* --- AKHIR BAGIAN GAMBAR HEADER --- */}
+
+              <div className="p-7 grow flex flex-col justify-between bg-white/50">
+                <div>
+                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
+                    Desain UI/UX mobile adaptasi dari aplikasi web Smart Toll
+                    (Proyek Kuliah) untuk monitoring dan manajemen sistem tol
+                    secara real-time.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    UI/UX
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Figma
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Proyek Kuliah SMT 6 */}
+            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
+              <div
+                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('/ongoing.png')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+              >
+                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
+                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
+
+                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
+                <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
+                  Proyek Kuliah
+                </span>
+                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
+                  Smart Toll IOT
+                </h3>
+              </div>
+              <div className="p-7 grow flex flex-col justify-between bg-white/50">
+                <div>
+                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
+                    Sistem Monitoring dan Manajemen Tol berbasis Internet of
+                    Things (IoT) untuk memantau kondisi jalan tol secara
+                    real-time dan memberikan informasi kepada pengguna melalui
+                    hasil analisis data.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Web App
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Next.js
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    IOT
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Tailwind CSS
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Cloud Computing
                   </span>
                 </div>
               </div>
