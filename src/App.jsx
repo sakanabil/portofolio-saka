@@ -1153,12 +1153,12 @@ const Portfolio = () => {
             </div>
 
             <div
-              onClick={() => openImageModal("/ongoing.png")} // <-- Panggil fungsi modal dan masukkan path gambar
+              onClick={() => openImageModal("/gamma.png")} // <-- Panggil fungsi modal dan masukkan path gambar
               className="bg-white/5 backdrop-blur-xl rounded-3xl p-4 border border-white/10 hover:border-sky-500/50 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(14,165,233,0.15)] transition-all duration-300 group cursor-pointer"
             >
               <div
                 className="aspect-[4/3] bg-slate-900/50 rounded-2xl flex items-center justify-center text-slate-600 mb-6 overflow-hidden relative border border-white/5 bg-cover bg-center"
-                style={{ backgroundImage: "url('/ongoing.png')" }} // <-- Tampilkan gambar sebagai background card
+                style={{ backgroundImage: "url('/gamma.png')" }} // <-- Tampilkan gambar sebagai background card
               >
                 {/* Efek Hover memunculkan tombol "Lihat Gambar" */}
                 <div className="absolute inset-0 bg-slate-900/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -1169,7 +1169,7 @@ const Portfolio = () => {
               </div>
               <div className="px-3 pb-2">
                 <h3 className="font-bold text-xl mb-1 truncate text-white group-hover:text-sky-300 transition-colors">
-                  Gammafest 2026 (ONGOING)
+                  Gammafest 2026
                 </h3>
                 <p className="text-sm text-slate-400 font-medium">
                   Participant (Data Science Competition) / Tahun 2026
