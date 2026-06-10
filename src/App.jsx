@@ -517,6 +517,69 @@ const Portfolio = () => {
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Proyek Kuliah SMT 6 */}
+            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
+              <div
+                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('/taptoll.jpg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+              >
+                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
+                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
+
+                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
+                <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
+                  Proyek Kuliah
+                </span>
+                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
+                  TapToll
+                </h3>
+              </div>
+              <div className="p-7 grow flex flex-col justify-between bg-white/50">
+                <div>
+                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
+                    Sistem Monitoring dan Manajemen Tol berbasis Internet of
+                    Things (IoT) untuk memantau kondisi jalan tol secara
+                    real-time dan memberikan informasi kepada pengguna melalui
+                    hasil analisis data yang telah di olah menggunakan big data
+                    hadoop.
+                  </p>
+                  <a
+                    href="https://github.com/sirfara12/SISTEM-MONITORING-PALANG-TOL-" // <-- MASUKKAN LINK GITHUB DI SINI
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-white text-slate-700 text-xs font-bold rounded-xl shadow-[0_2px_10px_rgba(14,165,233,0.05)] hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:-translate-y-0.5 transition-all duration-300 w-max"
+                  >
+                    <GithubIcon size={16} />
+                    Repository
+                  </a>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Web App
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Next.js
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    IoT
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Tailwind CSS
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Cloud Computing
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Big Data
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Hadoop
+                  </span>
+                </div>
+              </div>
+            </div>
+
             {/* Kuliah TerasWarga */}
             <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
               <div
@@ -566,7 +629,10 @@ const Portfolio = () => {
                     Dart
                   </span>
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    ML
+                    Machine Learning
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Computer Vision
                   </span>
                 </div>
               </div>
@@ -617,6 +683,9 @@ const Portfolio = () => {
                   </span>
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
                     Bootstrap
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Decision Support System
                   </span>
                 </div>
               </div>
@@ -929,7 +998,7 @@ const Portfolio = () => {
                   Proyek Personal
                 </span>
                 <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
-                  Smart Toll Mobile
+                  TapToll Mobile
                 </h3>
               </div>
               {/* --- AKHIR BAGIAN GAMBAR HEADER --- */}
@@ -937,7 +1006,7 @@ const Portfolio = () => {
               <div className="p-7 grow flex flex-col justify-between bg-white/50">
                 <div>
                   <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
-                    Desain UI/UX mobile adaptasi dari aplikasi web Smart Toll
+                    Desain UI/UX mobile adaptasi dari aplikasi web TapToll
                     (Proyek Kuliah) untuk monitoring dan manajemen sistem tol
                     secara real-time.
                   </p>
@@ -948,53 +1017,6 @@ const Portfolio = () => {
                   </span>
                   <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
                     Figma
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Proyek Kuliah SMT 6 */}
-            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
-              <div
-                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('/ongoing.png')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
-              >
-                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
-                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
-
-                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
-                <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
-                  Proyek Kuliah
-                </span>
-                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
-                  Smart Toll IOT
-                </h3>
-              </div>
-              <div className="p-7 grow flex flex-col justify-between bg-white/50">
-                <div>
-                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
-                    Sistem Monitoring dan Manajemen Tol berbasis Internet of
-                    Things (IoT) untuk memantau kondisi jalan tol secara
-                    real-time dan memberikan informasi kepada pengguna melalui
-                    hasil analisis data.
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    Web App
-                  </span>
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    Next.js
-                  </span>
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    IOT
-                  </span>
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    Tailwind CSS
-                  </span>
-                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
-                    Cloud Computing
                   </span>
                 </div>
               </div>
