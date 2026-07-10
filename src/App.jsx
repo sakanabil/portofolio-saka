@@ -1021,6 +1021,48 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+
+            {/* Lomba UI/UX INFEST */}
+            <div className="group bg-white/70 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white shadow-[0_8px_30px_rgba(14,165,233,0.05)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.1)] hover:-translate-y-2 transition-all duration-300 flex flex-col">
+              {/* --- BAGIAN GAMBAR HEADER --- */}
+              <div
+                className="h-48 p-6 flex flex-col justify-end relative overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('/infest.jpg')" }} // <-- MASUKKAN NAMA GAMBAR DI SINI
+              >
+                {/* Overlay Hitam Transparan (Wajib agar teks terbaca di atas gambar) */}
+                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-all duration-300 z-0"></div>
+
+                {/* Efek Cahaya / Glowing Orbs (Bisa dipertahankan atau dihapus) */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/40 rounded-full blur-2xl -mr-5 -mt-5 z-0 pointer-events-none"></div>
+
+                {/* Tag & Judul */}
+                <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full mb-3 w-max border border-white/20 relative z-10">
+                  Proyek Lomba
+                </span>
+                <h3 className="text-2xl font-bold text-white relative z-10 drop-shadow-md">
+                  Edumate AI
+                </h3>
+              </div>
+              {/* --- AKHIR BAGIAN GAMBAR HEADER --- */}
+
+              <div className="p-7 grow flex flex-col justify-between bg-white/50">
+                <div>
+                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
+                    Merancang UI/UX aplikasi mobile EduMate AI dengan integrasi
+                    AI untuk menghadirkan pengalaman belajar yang adaptif,
+                    personal, dan berpusat pada kebutuhan mahasiswa.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-sky-100">
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    UI/UX
+                  </span>
+                  <span className="text-xs font-bold text-slate-700 bg-white/80 backdrop-blur-sm border border-white px-3 py-1.5 rounded-lg shadow-[0_2px_10px_rgba(14,165,233,0.04)]">
+                    Figma
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1195,6 +1237,31 @@ const Portfolio = () => {
                 </h3>
                 <p className="text-sm text-slate-400 font-medium">
                   Participant (Data Science Competition) / Tahun 2026
+                </p>
+              </div>
+            </div>
+
+            <div
+              onClick={() => openImageModal("/IN-FEST26.jpg")} // <-- Panggil fungsi modal dan masukkan path gambar
+              className="bg-white/5 backdrop-blur-xl rounded-3xl p-4 border border-white/10 hover:border-sky-500/50 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(14,165,233,0.15)] transition-all duration-300 group cursor-pointer"
+            >
+              <div
+                className="aspect-[4/3] bg-slate-900/50 rounded-2xl flex items-center justify-center text-slate-600 mb-6 overflow-hidden relative border border-white/5 bg-cover bg-center"
+                style={{ backgroundImage: "url('/IN-FEST26.jpg')" }} // <-- Tampilkan gambar sebagai background card
+              >
+                {/* Efek Hover memunculkan tombol "Lihat Gambar" */}
+                <div className="absolute inset-0 bg-slate-900/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="bg-sky-500 text-white font-semibold px-4 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg border border-sky-400">
+                    Lihat Gambar
+                  </span>
+                </div>
+              </div>
+              <div className="px-3 pb-2">
+                <h3 className="font-bold text-xl mb-1 truncate text-white group-hover:text-sky-300 transition-colors">
+                  IN-FEST 2026
+                </h3>
+                <p className="text-sm text-slate-400 font-medium">
+                  2nd Place Winner (UI/UX Competition) / Tahun 2026
                 </p>
               </div>
             </div>
